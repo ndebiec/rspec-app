@@ -9,6 +9,9 @@ RSpec.describe Dog do
 		end
 
 		it 'fetches a ball' do
+			dog = Dog.new
+			2.times { dog.fetch(5) }
+			expect(dog.balls).to eql(10)
 		end
 	end 
 end
