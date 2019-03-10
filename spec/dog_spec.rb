@@ -1,5 +1,4 @@
-require 'rspec'
-require_relative 'dog'
+require './lib/dog.rb'
 
 RSpec.describe Dog do
 	
