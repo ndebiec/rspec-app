@@ -18,6 +18,10 @@ class Dog
     @hunger_level > 5
   end
 
+  def feed
+    @hunger_level = 0
+  end 
+
 end
 
 print Dog.new.bark
