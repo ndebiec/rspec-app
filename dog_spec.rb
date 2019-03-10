@@ -24,8 +24,8 @@ RSpec.describe Dog do
 				expect(subject).to_not be_hungry
 			end
 			it 'can be created hungry' do
-				hungry_dog = Dog.new(hunger_level = 7)
-				expect(hungry_dog).to be_hungry
+				dog = Dog.new(hunger_level = 7)
+				expect(dog).to be_hungry
 			end
 		end 
 	end
