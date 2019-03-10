@@ -5,12 +5,17 @@ class Dog
     return 'Woof!'
   end
   
-  def initialize
+  def initialize(hunger_level = 0)
     @balls = 0
+    @hunger_level = hunger_level
   end
 
   def fetch(balls_thrown)
     @balls += balls_thrown
+  end
+
+  def hungry?
+    @hunger_level > 5
   end
 
 end
